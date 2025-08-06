@@ -1,0 +1,142 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Menbere", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:weight;
+    font-style:normal;
+}
+header .header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+header .header-container .logo {
+    height: 30px;
+    width: 30px;
+}
+header .header-container .right-button a{
+    padding: 10px 20px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    background-color: black;
+    text-decoration: none;
+}
+header .header-container .right-button a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+main .content-text{
+    text-align: center;
+}
+main .content-header h1{
+    font-size: 60px;
+}
+main .content-para p{
+    font-size: 20px;
+}
+main .grid-container{
+    width: 80%;
+    margin: 0px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+}
+main .grid-container .items{
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-size: 15px;
+}
+main .grid-container .items img{
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+main .grid-container .items p{
+    height: 50%;
+    max-width: 60%;
+}
+main .grid-container .items .item-image {
+    width: 100%;
+}    
+main .grid-container #item1{
+    background-color: rgb(103, 89, 185);
+    grid-column: 1/2;
+    grid-row: 1/3 ;
+}
+main .grid-container #item2{
+    background-color: rgb(185, 146, 69);
+    grid-row: 1/2;
+    grid-column: 2/3 ;
+}
+main .grid-container #item3{
+    background-color: rgb(203, 126, 189);
+    grid-column: 3/4 ;
+    grid-row: 1/2;
+}
+main .grid-container #item4{
+    background-color: rgb(71, 138, 157);
+    grid-column: 4/5 ;
+    grid-row: 1/2;
+}
+main .grid-container #item5{
+    background-color: rgb(209, 110, 83);
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+main .grid-container #item6{
+    background-color: rgba(135, 13, 94, 0.285);
+    grid-row: 2/3;
+    grid-column: 4/5;
+}
+
+
+/* RESPONSIVENESS */
+
+@media(min-width:576px){
+
+}
+@media(max-width:576px){
+    header .header-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+    header .header-container .right-button a{
+        padding: 5px 10px;
+        font-size: 17px;
+        color: white;
+        border: 1px solid black;
+        border-radius: 30px;
+        background-color: black;
+        text-decoration: none;
+    }
+    main .content-header h1{
+        font-size: 40px;
+    }
+    main .content-para p{
+        font-size: 15px;
+        text-align: left;
+        margin: 20px;
+    }
+    main .grid-container{
+        width: 80%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
